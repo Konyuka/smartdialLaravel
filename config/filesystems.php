@@ -30,6 +30,17 @@ return [
 
     'disks' => [
 
+        'sftp' => [
+            'driver' => 'sftp',
+            'host' => '172.16.10.210',
+            'port' => 22,
+            'username' => 'asterisk16',
+            'password' => '2020@iolabs',
+            'privateKey' => 'C:\Users\user\Desktop\keygen.pub',
+            'root' => '/root',
+            'timeout' => 10,
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

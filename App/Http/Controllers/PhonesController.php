@@ -68,7 +68,7 @@ class PhonesController extends Controller
             $config.="\n";
         }
                   
-        file_put_contents('C:\Users\user\Desktop\users.conf',$config);
+        file_put_contents('/etc/asterisk/sip_smartdial.conf',$config);
         return redirect()->route('phones.index')->with('successMessage', 'User was successfully added!');
     }
 
