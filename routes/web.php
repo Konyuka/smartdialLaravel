@@ -11,6 +11,8 @@ Route::get('/', function () {
 
 Route::get('/users', 'App\Http\Controllers\UsersController@index');
 
+Route::get('/dial', 'App\Http\Controllers\DialController@index');
+
 Route::get('/phones', 'App\Http\Controllers\PhonesController@index')->name('phones.index');
 Route::get('/phones/create', 'App\Http\Controllers\PhonesController@create');
 Route::post('/phones', 'App\Http\Controllers\PhonesController@store');

@@ -1,7 +1,7 @@
 <template>
   <layout>
     <div>
-      This is the welcome page: {{ foo }}
+      
     </div>
   </layout>
 </template>
